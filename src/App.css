@@ -1,38 +1,52 @@
-.App {
-  text-align: center;
+body {
+  background-color: burlywood;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 50px;
+  padding: 50px;
+  font-family: "Varela", sans-serif;
+}
+.signUpForm {
+  width: 280px;
+  height: 70vh;
+  padding: 50px;
+  background-color: white;
+  border-radius: 10px;
+}
+.separator {
+  border-bottom: 1px solid rgb(198, 198, 198);
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.formLabel {
+  display: flex;
+  margin-bottom: 2px;
+  margin-top: 2px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+.formField > input {
+  font-family: "Varela Round", sans-serif;
+  padding: 8px;
+  width: 95%;
+  height: 20px;
+  border: 1px solid rgb(198, 198, 198);
+  border-radius: 3px;
+}
+.signUpButton {
+  font-family: "Quicksand", sans-serif;
+  font-size: 18px;
+  margin-top: 30px;
+  text-align: center;
+  padding: 8px;
+  width: 102%;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  background-color: rgb(15, 163, 163);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
 }
