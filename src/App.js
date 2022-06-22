@@ -1,5 +1,5 @@
 import "./App.css";
-import useState from "react";
+import { useState } from "react";
 function App() {
 
   const initialformData = {
@@ -13,6 +13,7 @@ function App() {
     const newFormData = { ...formData, [event.target.name]: event.target.value };
     setFormData(newFormData);
   };
+
   const handleSubmit = (event) => {
     event.preventDefault();
   }
@@ -27,32 +28,40 @@ function App() {
             <label className="formLabel">Frist Name</label>
             <input type="text"
               placeholder="Enter first name"
+              name="firstName"
               value={formData.firstName}
               onSubmit={handleChange}
+              onChange={handleChange}
               autoFocus required />
           </div>
           <div className="formField">
             <label className="formLabel">Last Name</label>
             <input type="text"
               placeholder="Enter last name"
+              name="lastName"
               value={formData.lastName}
               onSubmit={handleChange}
+              onChange={handleChange}
               required />
           </div>
           <div className="formField">
             <label className="formLabel">Email</label>
             <input type="email"
               placeholder="Enter email"
+              name="email"
               value={formData.email}
               onSubmit={handleChange}
+              onChange={handleChange}
               required />
           </div>
           <div className="formField">
             <label className="formLabel">Password</label>
             <input type="password"
               placeholder="Enter password"
+              name="password"
               value={formData.password}
               onSubmit={handleChange}
+              onChange={handleChange}
               required />
           </div>
           <button className="signUpButton">Submit</button>
